@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --azul-presidente: #2121ff;
+    --azul-claro: #4242fd;
+    --preto: rgb(20, 20, 20)
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#app {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
