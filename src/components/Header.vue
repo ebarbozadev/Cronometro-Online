@@ -33,4 +33,26 @@ header {
 .formulario {
     width: auto;
 }
+
+@media (max-width: 1163px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        height: 260px;
+    }
+}
 </style>

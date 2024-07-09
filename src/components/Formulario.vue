@@ -65,7 +65,7 @@ export default defineComponent({
             <Botao @clicado="finalizar" :desabilitado="!cronometroRodando" texto="Finalizar" />
         </div>
 
-        <Cronometro :tempo-em-segundos="tempoEmSegundos" />
+        <Cronometro class="cronometro" :tempo-em-segundos="tempoEmSegundos" />
     </div>
 </template>
 
@@ -89,5 +89,39 @@ input {
     display: flex;
     gap: 10px;
     justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botoes button {
+        width: 195px;
+    }
+
+    .cronometro {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .botoes {
+        flex-direction: column;
+    }
+
+    .informacoes input {
+        width: 200px;
+    }
+    
+    .cronometro {
+        width: 300px;
+    }
+
+    .botoes button {
+        width: 300px;
+    }
 }
 </style>

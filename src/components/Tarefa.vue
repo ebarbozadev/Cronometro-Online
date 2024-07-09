@@ -47,6 +47,7 @@ export default defineComponent({
     border-radius: 10px;
 
     width: 20%;
+    min-width: 80px;
     text-align: center;
 
     color: aliceblue;
@@ -59,5 +60,17 @@ export default defineComponent({
 .cronometro {
     background-color: var(--azul-presidente);
     width: 20%;
+    min-width: 100px;
+}
+
+@media (max-width: 425px) {
+    .tarefa {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .categoria, .cronometro, .descricao {
+        width: 100%;
+    }
 }
 </style>

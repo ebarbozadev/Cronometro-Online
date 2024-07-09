@@ -34,9 +34,11 @@ export default defineComponent({
 
 <style scoped>
   main {
-    min-width: 600px;
+    min-width: 90%;
     height: 500px;
     margin: auto;
+
+    padding: 20px;
 
     overflow-y: auto
   }
